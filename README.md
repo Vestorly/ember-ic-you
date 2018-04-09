@@ -5,14 +5,33 @@ ember-ic-you is a simple scroll listener that sends an action when the element i
 See a demo here: [http://vestorly.github.io/ember-ic-you](http://vestorly.github.io/ember-ic-you)
 
 ### Installation
+------------------------------------------------------------------------------
 
-`ember install ember-ic-you`
+Via `ember install`
+```
+ember install ember-ic-you
+```
 
-### Installation for ember-cli 0.1.5 - 0.2.2
+Via NPM
+* `git clone http://vestorly.github.io/ember-ic-you`
+* `cd ember-ic-you`
+* `npm install`
 
-`ember install:addon ember-ic-you`
+### Linting
+
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Running tests
+
+* `ember test` – Runs the test suite on the current Ember version
+* `ember test --server` – Runs the test suite in "watch mode"
+* `npm test` – Runs `ember try:each` to test your addon against multiple Ember versions
+
+### Running the dummy application
 
 ### Usage
+------------------------------------------------------------------------------
 
 At a basic level, you can use the listener in any template.
 
@@ -49,3 +68,8 @@ ember-ic-you is customizable!
 
 * `scrolledContent` - (optional) selector for the content that will be scrolled if the `scrollContainer` is NOT `window`
   * default: `null`
+------------------------------------------------------------------------------
+
+### Running dummy app
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).

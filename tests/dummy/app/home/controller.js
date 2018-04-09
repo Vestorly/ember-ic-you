@@ -1,11 +1,10 @@
-import Ember from 'ember';
-
-const { Controller } = Ember;
+import Controller from '@ember/controller';
+import { set } from '@ember/object';
 
 export default Controller.extend({
   actions: {
     crossedTheLine(above) {
-      this.set('aboveTheLine', above);
+      set(this, 'aboveTheLine', above);
     }
   }
 });
